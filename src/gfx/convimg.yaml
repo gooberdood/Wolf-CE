@@ -1,0 +1,110 @@
+palettes:
+  - name: global_palette
+    fixed-entries:
+      #transparent color, black
+      - color: {index: 0, r: 255, g: 0, b: 255}
+      - color: {index: 1, r: 0, g: 0, b: 0}
+      #shader colors
+      - color: {index: 2, r: 30, g: 30, b: 30}
+      - color: {index: 3, r: 48, g: 48, b: 48}
+      - color: {index: 4, r: 61, g: 61, b: 61}
+      - color: {index: 5, r: 69, g: 69, b: 69}
+      - color: {index: 6, r: 86, g: 86, b: 86}
+      - color: {index: 7, r: 104, g: 104, b: 104}
+      - color: {index: 8, r: 121, g: 121, b: 121}
+      - color: {index: 9, r: 134, g: 134, b: 134}
+      - color: {index: 10, r: 147, g: 147, b: 147}
+      - color: {index: 11, r: 164, g: 164, b: 164}
+      - color: {index: 12, r: 177, g: 177, b: 177}
+      - color: {index: 13, r: 194, g: 194, b: 194}
+      #ceiling, floor colors
+      - color: {index: 14, r: 56, g: 56, b: 56}
+      - color: {index: 15, r: 112, g: 112, b: 112}
+    images: automatic
+
+converts:
+  - name: sprites
+    palette: global_palette
+    transparent-color-index: 0
+    compress: zx0
+    images:
+    #wall strips
+     - assets/wallStrips/strip1.png
+     - assets/wallStrips/strip2.png
+     - assets/wallStrips/strip3.png
+     - assets/wallStrips/strip4.png
+     - assets/wallStrips/strip5.png
+     - assets/wallStrips/strip6.png
+     - assets/wallStrips/strip7.png
+     - assets/wallStrips/strip8.png
+     - assets/wallStrips/strip9.png
+     - assets/wallStrips/strip10.png
+     - assets/wallStrips/strip11.png
+     - assets/wallStrips/strip12.png
+     - assets/wallStrips/strip13.png
+     - assets/wallStrips/strip14.png
+     - assets/wallStrips/strip15.png
+     - assets/wallStrips/strip16.png
+     - assets/wallStrips/strip17.png
+     - assets/wallStrips/strip18.png
+     - assets/wallStrips/strip19.png
+     - assets/wallStrips/strip20.png
+     - assets/wallStrips/strip21.png
+     - assets/wallStrips/strip22.png
+     - assets/wallStrips/strip23.png
+     - assets/wallStrips/strip24.png
+     - assets/wallStrips/strip25.png
+     - assets/wallStrips/strip26.png
+     - assets/wallStrips/strip27.png
+     - assets/wallStrips/strip28.png
+     - assets/wallStrips/strip29.png
+     - assets/wallStrips/strip30.png
+     - assets/wallStrips/strip31.png
+     - assets/wallStrips/strip32.png
+     - assets/wallStrips/strip33.png
+     - assets/wallStrips/strip34.png
+     - assets/wallStrips/strip35.png
+     - assets/wallStrips/strip36.png
+     - assets/wallStrips/strip37.png
+     - assets/wallStrips/strip38.png
+     - assets/wallStrips/strip39.png
+     - assets/wallStrips/strip40.png
+     - assets/wallStrips/strip41.png
+     - assets/wallStrips/strip42.png
+     - assets/wallStrips/strip43.png
+     - assets/wallStrips/strip44.png
+     - assets/wallStrips/strip45.png
+     - assets/wallStrips/strip46.png
+     - assets/wallStrips/strip47.png
+     - assets/wallStrips/strip48.png
+     - assets/wallStrips/strip49.png
+     - assets/wallStrips/strip50.png
+     - assets/wallStrips/strip51.png
+     - assets/wallStrips/strip52.png
+     - assets/wallStrips/strip53.png
+     - assets/wallStrips/strip54.png
+     - assets/wallStrips/strip55.png
+     - assets/wallStrips/strip56.png
+     - assets/wallStrips/strip57.png
+     - assets/wallStrips/strip58.png
+     - assets/wallStrips/strip59.png
+     - assets/wallStrips/strip60.png
+     - assets/wallStrips/strip61.png
+     - assets/wallStrips/strip62.png
+     - assets/wallStrips/strip63.png
+     - assets/wallStrips/strip64.png
+     
+     #gui
+     - assets/hud/lowerScreenHUD1.png
+     - assets/hud/lowerScreenHUD2.png
+     - assets/hud/weapons/pistol1.png
+
+outputs:
+  - type: appvar
+    name: wolfsp
+    include-file: wolfsp.h
+    source-format: c
+    palettes:
+      - global_palette
+    converts:
+      - sprites
